@@ -1,0 +1,169 @@
+.flex{
+  display: flex;
+}
+.justify-content{
+  justify-content: center;
+}
+.align-items{
+  align-items: center;
+}
+.text-align{
+  text-align: center;
+}
+.flex-direction{
+  flex-direction:column ;
+}
+.container {
+  gap: 30px;
+  margin-bottom: 64px;
+  border: 1px solid red;
+}
+
+.container-header {
+  width: 100%;
+  height: 68px;
+  margin: auto;
+  justify-content: space-between;
+}
+.body-container {
+  width: 100%;
+  height: fit-content;
+  gap: 30px;
+}
+.point {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #10b981;
+}
+.img-shadow img {
+  margin-bottom: 20px;
+  height: 280px;
+}
+.img-shadow {
+  width: 280px;
+  height: 280px;
+  background: #e5e7eb;
+}
+.text-container {
+  height: fit-content;
+  gap: 50px;
+}
+.ulanbtr {
+  flex-direction: row;
+  gap: 10px;
+}
+.new-project {
+  flex-direction: row;
+  gap: 10px;
+}
+.icon-btn {
+  flex-direction: row;
+  gap: 15px;
+}
+.container2 {
+  width: 100%;
+  height: fit-content;
+  background-color: #f9fafb;
+}
+.about {
+  height: fit-content;
+  width: 100%;
+  padding-top: 64px;
+  gap: 40px;
+  padding-bottom: 64px;
+}
+
+.img-shadow2 {
+  width: 320px;
+  height: 360px;
+  background-color: #e5e7eb;
+  margin-top: 20px;
+  position: relative;
+}
+.content img {
+  position: absolute;
+  margin-bottom: 20px;
+}
+.list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.list li {
+  width: 166.5px;
+  height: 48px;
+}
+.container3 {
+  width: 100%;
+  height: fit-content;
+}
+
+.skills-icon {
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50.59px;
+}
+.skills {
+  margin: auto;
+}
+.container4 {
+  width: 100%;
+  height: fit-content;
+  background-color: #f9fafb;
+  gap: 30px;
+  padding-bottom: 64px;
+}
+.btn {
+  width: fit-content;
+  height: 28px;
+  background-color: #e5e7eb;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.head {
+  align-self: center;
+  padding-top: 64px;
+}
+.upwork {
+  width: 80%;
+  height: fit-content;
+  background-color: #ffff;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+}
+.container5 {
+  width: 100%;
+  height: fit-content;
+}
+.content-container5 {
+  gap: 30px;
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+
+}
+.img-container {
+  background-color: #f9fafb;
+  height: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+}
+.Cab-text {
+  width: 90%;
+  margin: auto;
+}
+.skills-btn {
+  display: grid;
+  grid-template-columns: 100px 100px;
+}
+.footer{
+  background-color: #e5e7eb;
+  width: 100%;
+  height: 68px;
+
+}

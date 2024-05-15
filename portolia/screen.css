@@ -1,0 +1,22 @@
+@media only screen and (min-width:1200px){
+   .bgGray{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+   }
+    .container {
+        width: 1140px;
+        padding: 20px;
+      }
+      .body-container {
+        flex-direction: row-reverse;
+       
+      }
+      .text-conrainer {
+        flex-direction: row;
+      }
+      .bio{
+        width: 50%;
+      }
+    }

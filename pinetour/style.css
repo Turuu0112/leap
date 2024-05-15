@@ -1,0 +1,234 @@
+body {
+  background-color: #f4f4f4;
+}
+
+.head {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.head img {
+  display: block;
+  padding-top: 19px;
+  margin: auto;
+}
+.landing {
+  width: fit-content;
+  border: 4px solid red;
+  margin: auto;
+  margin-top: 120px;
+}
+.landing h1 {
+  font-size: 77px;
+  text-align: center;
+  color: #303030;
+}
+.landing p {
+  font-size: 24px;
+  color: #ababab;
+  text-align: center;
+}
+.landing img {
+  margin-left: 21px;
+  padding-top: 80px;
+}
+.landing img:first-child {
+  margin-left: 0;
+}
+.tours {
+  margin: auto;
+  position: relative;
+  margin-top: 240px;
+  height: 845px;
+  border: 3px solid blue;
+  width: 1198px;
+}
+.tours span {
+  font-size: 24px;
+  color: #ababab;
+}
+
+.left h1 {
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+.left {
+  position: absolute;
+  left: 0;
+  width: 358px;
+  height: 796px;
+}
+
+.right {
+  position: relative;
+  padding-left: 500px;
+}
+.right img {
+  object-fit: cover;
+
+  border-radius: 24px;
+}
+.box1 {
+  width: fit-content;
+}
+.box1 > div {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.box1 > div:first-child {
+  padding: 10px;
+  border-radius: 40%;
+  background-color: black;
+  color: green;
+  margin-right: 16px;
+  font-weight: 400;
+}
+.line {
+  border-left: 3px dashed;
+  height: 55.8px;
+  position: relative;
+  left: 20px;
+}
+.box1 p {
+  font-size: 12px;
+  color: #777777;
+}
+.box1 h2 {
+  font-size: 16px;
+  color: #000000;
+}
+
+.price {
+  text-align: center;
+  margin: auto;
+  margin-top: 500px;
+}
+.price > div:first-child {
+  color: #ababab;
+  font-size: 20px;
+}
+.price h4 {
+  font-size: 24px;
+}
+.price p {
+  font-size: 48px;
+  color: #303030;
+  padding-bottom: 80px;
+  margin: auto;
+}
+.stpack {
+  border: 2px solid white;
+  background-color: white;
+  width: 285px;
+  height: 370px;
+  left: 20px;
+  justify-content: space-between;
+  border-radius: 24px;
+  text-align: start;
+}
+.pack h4 {
+  padding-top: 40px;
+  left: 40px;
+  position: relative;
+}
+.pack li {
+  padding-top: 13px;
+}
+.pack h3 {
+  position: relative;
+  left: 140px;
+  font-size: 32px;
+}
+.price ul {
+  color: #777777;
+  font-size: 22px;
+}
+.pack ul {
+  padding-bottom: 12px;
+  font-size: 20px;
+  padding-top: 28px;
+}
+.luxurypack {
+  width: 285px;
+  height: 370px;
+  border-radius: 24px;
+  text-align: start;
+  left: 20px;
+  position: relative;
+  background-color: white;
+}
+.pack {
+  display: inline-flex;
+  top: 237px;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+.stpack:hover {
+  border: 2px solid #18ba51;
+}
+.luxurypack:hover {
+  border: 2px solid #18ba51;
+}
+.areyou {
+  height: 393px;
+  background-color: #171717;
+  text-align: center;
+  width: 100vw;
+  margin-top: 240px;
+}
+.areyou p {
+  color: white;
+  font-size: 32px;
+  padding-top: 150px;
+}
+.areyou button {
+  background-color: #18ba51;
+  text-size-adjust: 16px;
+  color: white;
+  width: 130px;
+  height: 44px;
+}
+.footer {
+  height: 228px;
+  background-color: #101010;
+  margin: auto;
+  display: block;
+  width: 100vw;
+}
+.logo {
+  padding-left: 120px;
+  padding-top: 80px;
+  color: white;
+  font-size: 28px;
+  flex-direction: row ;
+  display: flex;
+
+  
+  
+}
+.footer button {
+  height: 44px;
+  width: 171px;
+  background-color: #303030;
+  color: white;
+  border-radius: 4px;
+}
+.button {
+  
+  font-size: 18px;
+  position:relative;
+  left: 70%;
+
+  
+}
+.button img {
+  display: inline-flex;
+  vertical-align: middle;
+  padding-right: 15px;
+}
