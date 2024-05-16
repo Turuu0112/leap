@@ -16,7 +16,7 @@
 .container {
   gap: 30px;
   margin-bottom: 64px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .container-header {
@@ -36,18 +36,27 @@
   border-radius: 100%;
   background: #10b981;
 }
-.img-shadow img {
-  margin-bottom: 20px;
+.img-box{
+  width: 100%;
   height: 280px;
+  /* border: 1px solid red; */
+}
+.img {
+  height: 280px;
+  position: relative;
+  margin-bottom: 30px;
+
 }
 .img-shadow {
   width: 280px;
   height: 280px;
   background: #e5e7eb;
+  position: absolute
 }
 .text-container {
   height: fit-content;
   gap: 50px;
+  width: 100%;
 }
 .ulanbtr {
   flex-direction: row;
@@ -73,7 +82,14 @@
   gap: 40px;
   padding-bottom: 64px;
 }
-
+.content{
+  width: 100%;
+  height: fit-content;
+}
+.paragraph{
+  width: 100%;
+  height: fit-content;
+}
 .img-shadow2 {
   width: 320px;
   height: 360px;
@@ -100,14 +116,11 @@
 }
 
 .skills-icon {
-  width: 100%;
   height: fit-content;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 50.59px;
-}
-.skills {
-  margin: auto;
+  justify-content: center;
 }
 .container4 {
   width: 100%;
@@ -115,6 +128,9 @@
   background-color: #f9fafb;
   gap: 30px;
   padding-bottom: 64px;
+}
+.content-container2{
+  gap: 30px;
 }
 .btn {
   width: fit-content;
@@ -136,13 +152,15 @@
   border-radius: 10px;
   padding: 10px;
 }
+.upwork-box{
+  gap: 30px;
+}
 .container5 {
   width: 100%;
   height: fit-content;
 }
 .content-container5 {
-  gap: 30px;
-  width: 90%;
+  /* width: 90%; */
   height: fit-content;
   margin: auto;
 
@@ -150,12 +168,13 @@
 .img-container {
   background-color: #f9fafb;
   height: fit-content;
-  padding: 10px;
-  border: 1px solid black;
+}.img-container img{
+  width: 90%;
+  height: 90%;
 }
 .Cab-text {
-  width: 90%;
-  margin: auto;
+  padding: 20px;
+  gap: 24px;
 }
 .skills-btn {
   display: grid;
