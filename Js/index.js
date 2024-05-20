@@ -1,8 +1,11 @@
+//openning line
+let a ="Comments can make code readable"
+var b = "Comments can make code"
+const c = " Javascript lesson begin"
 
-    fun(a){
-        if(a%2==0){
-            return "even"
-        }else
-            return "odd"
-    }
-       const rem=a%2
+
+console.log(b + a + c);
+console.log("Comments can make code readable");
+console.log(b)
+console.log(a)
+console.log(c)
