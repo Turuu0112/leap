@@ -113,7 +113,8 @@
 //     return arr;
 
 // }
-// // console.log(arr)
+// console.log(arr)
+
 // const arr = count(7)
 // const a = count(11)
 // console.log(arr,a); 
@@ -154,12 +155,60 @@
 // const numberOfEvenes = countEven(a)
 // console.log(numberOfEvenes);
 
-const a = [1,334, 23, 2322, 2,1];
-function max(arr){
-    
+// let numbers = [3, 7, 2, 8, 5];
+// let max = numbers[0]; // initialize to the first value
+// for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] > max) {
+//         max = numbers[i];
+//     }
+// }
 
-        }
+// console.log(max); // Outputs: 8
+
+
+// create an array
+// let myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// // create a variable for the sum and initialize it
+// let sum = 0;
+
+// // iterate over each item in the array
+// for (let i = 0; i < myNums.length; i++ ) {
+//   sum += myNums[i];
+// }
+
+// console.log(sum) // 15
+
+// const Nums = [12,33,];
+// // const summ=(arr)=>{
+//   let sum = 0
+//   for ( let i = 0; i< Nums.length; i++){
+//     sum += Nums[i]
+//   }
+  
+// // }
+// console.log(sum)
+// var arr = [5,1,9,5,7];
+// var smallest = arr[0];
+
+// for(var i=1; i<arr.length; i++){
+//     if(arr[i] < smallest){
+//         smallest = arr[i];   
+//     }
+// }
+
+// console.log(smallest);
+
+let a = [5,6,4,2,1]
+const mini = (arr)=>{
+  let small = a[0];
+  for( let i= 1; i<arr.length; i++){
+    if(arr[i] < small ){
+      small = arr[i]
+    }
+  }
+  
 }
 
-const result = max(a)
+const result = mini(a)
 console.log(result)
