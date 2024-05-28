@@ -12,6 +12,7 @@ let array3 = arrya1.concat(arrya2)
 let pineCone ="Pinecone Academy Leap хөтөлбөр"
 
 console.log(cH.toUpperCase())
+
 console.log(cH.toLowerCase())
 console.log(cH.substring(9))
 console.log(cH.substring(16))
