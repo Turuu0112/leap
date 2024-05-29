@@ -69,22 +69,21 @@
 // let vii = 4 != 4;// true
 // let iix = 4 !== 4;// false
 // let ix = 4 != "4";// true
-// let x = 4 == "4"; //false 
+// let x = 4 == "4"; //false
 // let xi = 4 === "4";//false
-// let one = 4 > 3 && 10 < 12;//true 
-// let two = 4 > 3 && 10 > 12;// false 
-// let three = 4 > 3 || 10 < 12;// true 
+// let one = 4 > 3 && 10 < 12;//true
+// let two = 4 > 3 && 10 > 12;// false
+// let three = 4 > 3 || 10 < 12;// true
 // let four = 4 > 3 || 10 > 12;// true
 // let five = !(4 > 3);// false
-// let six = !(4 < 3); //true 
+// let six = !(4 < 3); //true
 // let eight = !(4 > 3 && 10 < 12);//false
 // let nine = !(4 > 3 && 10 > 12);//true
 // let ten = !(4 === "4");//false
-//          
+//
 
+// Array
 
-                // Array 
-// const number=[1,3,45,5 ,56 ,65,767]
 
 // // let num = number.pop()
 // let mum = number.push(25,78)
@@ -92,8 +91,6 @@
 
 // console.log("Number",mum)
 // console.log("Numbers",number);
-
-
 
 // function count(n){
 //     for (let i=1;i<=n;i+=2){
@@ -103,33 +100,20 @@
 // }
 // count(8)
 
-// function count(n){
-//     const arr = []
-//     for (let i=1;i<=n;i++){
-//         arr.push(i)
-//         // console.log("loop",arr)
-
-//     }
-//     return arr;
-
-// }
-// console.log(arr)
-
 // const arr = count(7)
 // const a = count(11)
-// console.log(arr,a); 
+// console.log(arr,a);
+const number=
+const reverse =(arr)=>{
+    let n = []
+    for(let i = arr.length-1 ;i = 0;  i++){
+        n.push(number(i))
 
+    }
+        return n;
+}
 
-// const reverse =(n)=>{
-//     const arr =[]
-//     for(let i = n;i>0; i--){
-//         arr.push(i)
-
-//     }
-//         return arr;
-// }
-
-// console.log(reverse(15))
+console.log(reverse[1,3,45,5 ,56 ,65,767])
 
 // const a= [1,5,2,7,45,13,13];
 
@@ -155,6 +139,87 @@
 // const numberOfEvenes = countEven(a)
 // console.log(numberOfEvenes);
 
+// const a = [8585, 334, 23, 2322, 2, 1];
+// function max(arr) {
+//   let maxNumber = [0];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > maxNumber) {
+//       maxNumber = arr[i];
+//     }
+//   }
+//   return maxNumber;
+// }
+
+// const result = max(a);
+// console.log(result);
+
+// let number = [1,45,56,3345,3,3]
+// let max = number[0]
+
+// for (let i=1; i< number.length; i++){
+//         if(number[i]>max){
+//                 max=number[i]
+//         }
+// }
+// console.log(max)
+// const b =[123,3434,4343,4343535,43434]
+// const max = (arr) =>{
+//         let maxvalue = [0]
+//         for (let i=0;i<arr.length; i++){
+//                 if(arr[i] > maxvalue){
+//                         maxvalue=arr[i]
+//                 }
+//         }
+//         return maxvalue
+// }
+// const res = max(b)
+// console.log(res)
+
+//                 object
+// let person ={
+//         firstName: "tu",
+//         lastName:"erdene",
+//         age : 27,
+//         head : {
+//                 hair: "black",
+//                 style:"short ustei",
+//         },
+//         height: 170,
+//         skills:["html","css","js","java"],
+//         married:{
+//                 }
+// }
+// let result = (`namaig ${person.firstName} gedeg bi${person.age} nastai ${person.height} ondortei ${person.head.hair} ${person.head.style} ${person.skills} tei.`)
+// console.log(result)
+// const countEven = (arr)=>{
+// const counts ={}
+
+//         let each = [1]
+//         for(let i=1; i<arr.length ; i++){
+//                 const num = arr[i]
+//                 if(counts[num]!==undefined){
+//                         counts[num]++;
+
+//         } else {
+//                 counts[num]=1
+//         }
+//         return count
+// }
+// }
+// const a =[1,1,3,4,4,1,5,1]
+// console.log(countEven(a))
+
+// / var arr = [5,1,9,5,7];
+// var smallest = arr[0];
+
+// for(var i=1; i<arr.length; i++){
+//     if(arr[i] < smallest){
+//         smallest = arr[i];
+//     }
+// }
+
+// console.log(smallest);
+
 // let numbers = [3, 7, 2, 8, 5];
 // let max = numbers[0]; // initialize to the first value
 // for (let i = 1; i < numbers.length; i++) {
@@ -165,50 +230,45 @@
 
 // console.log(max); // Outputs: 8
 
-
-// create an array
-// let myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-// // create a variable for the sum and initialize it
-// let sum = 0;
-
-// // iterate over each item in the array
-// for (let i = 0; i < myNums.length; i++ ) {
-//   sum += myNums[i];
-// }
-
-// console.log(sum) // 15
-
-// const Nums = [12,33,];
-// // const summ=(arr)=>{
+// const Nums = [12,33,10,-1];
+// const summ=(arr)=>{
 //   let sum = 0
-//   for ( let i = 0; i< Nums.length; i++){
-//     sum += Nums[i]
+//   for ( let i = 0; i< arr.length; i++){
+//     sum += arr[i]
 //   }
-  
-// // }
-// console.log(sum)
-// var arr = [5,1,9,5,7];
-// var smallest = arr[0];
+//   return sum
 
-// for(var i=1; i<arr.length; i++){
-//     if(arr[i] < smallest){
-//         smallest = arr[i];   
-//     }
 // }
+// console.log(summ(Nums))
 
-// console.log(smallest);
+// const numbers = [-1, 34, -34, 10];
+// const sums = (arr) => {
+//   let niilber = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//       niilber += arr[i];
+//     }
+//   }
+//   return niilber;
+// };
+// console.log(sums(numbers));
 
-let a = [5,6,4,2,1]
-const mini = (arr)=>{
-  let small = a[0];
-  for( let i= 1; i<arr.length; i++){
-    if(arr[i] < small ){
-      small = arr[i]
-    }
-  }
-  
-}
+// let a = [5, 6, 4, 2, -1];
+// const mini = (arr) => {
+//   let small = a[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < small) {
+//       small = arr[i];
+//     }
+//   }
+//   return small;
+// };
+// const result = mini(a);
+// console.log(result);
 
-const result = mini(a)
-console.log(result)
+// const b = [1,4,5,6,7,8,9]
+// for (let i= 1; i< b.length ;i++)
+
+
+
+// console.log(b)
