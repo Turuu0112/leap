@@ -103,17 +103,8 @@
 // const arr = count(7)
 // const a = count(11)
 // console.log(arr,a);
-const number=
-const reverse =(arr)=>{
-    let n = []
-    for(let i = arr.length-1 ;i = 0;  i++){
-        n.push(number(i))
 
-    }
-        return n;
-}
 
-console.log(reverse[1,3,45,5 ,56 ,65,767])
 
 // const a= [1,5,2,7,45,13,13];
 
@@ -266,9 +257,135 @@ console.log(reverse[1,3,45,5 ,56 ,65,767])
 // const result = mini(a);
 // console.log(result);
 
-// const b = [1,4,5,6,7,8,9]
-// for (let i= 1; i< b.length ;i++)
+
+// const reverseArray = (arr) => {
+//  const reversedArray = [];
+
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     reversedArray.push(arr[i]);
+// }
+
+// return reversedArray;
+// };
+
+// console.log(reverseArray([1, 2, 3, 4, 5, 6, 7]));
+
+
+// const countTops = (arr) => {
+//       let tops = [];
+    
+//       for (let i = 1; i < arr.length - 1; i++) {
+//         if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
+//           tops.push(arr[i]);
+//         }
+//       }
+    
+//       if (arr[0] > arr[1]) {
+//         tops.push(arr[0]);
+//       }
+    
+//       if (arr[arr.length - 1] > arr[arr.length - 2]) {
+//         tops.push(arr[arr.length - 1]);
+//       }
+    
+//       return tops;
+//     };
+    
+//     console.log(countTops([5, 2, 6, 1, 7, 9]));
+
+
+//     const printPairs = (arr) => {
+//         for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] + arr[j] === target) {
+//             console.log(`${arr[i]} + ${arr[j]} = ${target}`);
+//             }
+// }
+//         }
+//     };
+//         printPairs([5, 2, 6, 7, 1], 8);
+
+    // const number = [5,6,7,4,4,3]
+    // const numers = [5,6,7,2,32,4]
+//     const printArr = (arr1,arr2)=>{
+//         for( let i= 0; i < arr1.length; i++){
+//             for(let j = i+ 1; j < arr2.length; j++ ){
+//                 if(arr1[i] === arr2[j] == target){
+//                     console.log(`${arr1[i]} + ${arr2[i]} = ${target}`);
+//                 } 
+//             }
+//         }
+//     }
+// printArr [2,3,4,5,6,7,8]
+// printArr [2,5,6,7,8,3,4]
+
+
+// const a =[ 1,1,-4,5,6,-2,-4,-5,-7]
+ // const negaTive =(arr)=>{
+//     for( let i= 0; i< arr.length; i++){
+//         for ( let j= 0; i< arr.length ;i++)
+//         if(arr[i] < 0 ){
+//             let t =arr[j]
+//             arr[j] = arr[i]
+//             arr[i] = t
+//             j++
+//         }
+//         } return arr
+//     } 
+
+
+// const negaTiveNum = (arr)=>{
+//     let j = [0]
+//     for( let i=0; i<arr.length; i++){
+//         if(arr[i]<0){
+//             let t= arr[j]
+//             arr[j] =arr[i]
+//             arr[i] = t
+//             j++
+//         }
+//     }
+//     return arr
+// }
+// console.log(negaTiveNum(a))
+
+
+// const b =[1,3,4,5,6,7,8,9]
+// const lostNum = (arr)=>{
+//     for
+// }
+
+
+let a = [5, 6, 4, 2, 1,];
+const mini = (arr) => {
+  let small = a[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < small) {
+      small = arr[i];
+    }
+  }
+  return small;
+};
+const maxNumber =(arr)=>{
+let max = a[0];
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+    max = arr[i];
+    } 
+    return max;
+}
+}
+const summ=(arr)=>{                                 
+  let sum = 0
+  for ( let i = 0; i< arr.length; i++){
+    sum += arr[i]
+  }
+  return sum
+
+}
+const lostNum = (arr)=>{
+}
+console.log(summ(a))
+console.log(`${maxNumber(a)} ${mini(a)}`)
 
 
 
-// console.log(b)
