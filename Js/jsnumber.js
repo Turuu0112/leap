@@ -307,15 +307,16 @@
 
     // const number = [5,6,7,4,4,3]
     // const numers = [5,6,7,2,32,4]
-//     const printArr = (arr1,arr2)=>{
-//         for( let i= 0; i < arr1.length; i++){
-//             for(let j = i+ 1; j < arr2.length; j++ ){
-//                 if(arr1[i] === arr2[j] == target){
-//                     console.log(`${arr1[i]} + ${arr2[i]} = ${target}`);
-//                 } 
-//             }
-//         }
-//     }
+    // const printArr = (arr1,arr2)=>{
+    //     for( let i= 0; i < arr1.length; i++){
+    //         for(let j = i+ 1; j < arr2.length; j++ ){
+    //             if(arr1[i] === arr2[j] == target){
+                    
+    //             } 
+    //         }
+    //     }
+    // }
+    // console.log(`${arr1[i]} + ${arr2[i]} = ${target}`);
 // printArr [2,3,4,5,6,7,8]
 // printArr [2,5,6,7,8,3,4]
 
@@ -355,37 +356,145 @@
 // }
 
 
-let a = [5, 6, 4, 2, 1,];
-const mini = (arr) => {
-  let small = a[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] < small) {
-      small = arr[i];
-    }
-  }
-  return small;
-};
-const maxNumber =(arr)=>{
-let max = a[0];
-for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > max) {
-    max = arr[i];
-    } 
-    return max;
-}
-}
-const summ=(arr)=>{                                 
-  let sum = 0
-  for ( let i = 0; i< arr.length; i++){
-    sum += arr[i]
-  }
-  return sum
+// let a = [5, 6, 4, 2, 1,];
+// const mini = (arr) => {
+//   let small = a[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < small) {
+//       small = arr[i];
+//     }
+//   }
+//   return small;
+// };
+// const maxNumber =(arr)=>{
+// let max = a[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//     max = arr[i];
+//     } 
+//     return max;
+// }
+// }
+// const summ=(arr)=>{                                 
+//   let sum = 0
+//   for ( let i = 0; i< arr.length; i++){
+//     sum += arr[i]
+//   }
+//   return sum
 
+// }
+// const lostNum = (arr)=>{
+// }
+// console.log(summ(a))
+// console.log(`${maxNumber(a)} ${mini(a)}`)
+
+
+// const ret = (arr)=>{
+
+// } 
+
+
+
+// let s = "coaching"
+// let t = "coding"
+// const number = s.length
+// const nUmbers = t.length
+// var appendCharacters = function(arr) {
+//     for (let i = 1; i<number ,i<nUmbers  ; i++){
+//         if(number[i]>nUmbers[i]){
+//           number
+//         }else{
+
+//         }
+//         return nUmbers
+
+//     }
+    
+// };
+// console.log(appendCharacters())
+// const findOperator = (phoneNumber) =>{
+//   const firsttwo = phoneNumber.slice(0,2)
+//   switch(firsttwo){
+//     case "99":
+//     case "95":
+//     case "94":
+//       return "Mobicom"
+//       case "96":
+//       case "91":
+//         return "Skytel"
+//       case "60":
+//         return "Ondo"
+//        case "88":
+//         case "86":
+//           return "Unitel"
+//        case "95":
+//        case "93":
+//         return "G-mobile"
+//        default:
+//         return  "number"        
+//   }
+  
+// }
+// console.log(findOperator("60010101"))
+
+// for ( let i =1; i< 10 ; i++){ // break giih
+//   if( i ===4 ){
+//     break
+    
+//   }console.log(i)
+// }
+
+
+// for ( let i =1; i< 10 ; i++){ // continue hiij toog algasah
+//   if( i ===4 ){
+//     continue
+    
+//   }
+//   console.log(i)
+// }
+
+
+// const arr = [4,5,6,7,8,8]
+// for(const el in,of arr){
+//   console.log(arr)
+// }
+
+
+
+
+// const arr2 =[
+//   [1,2,3,4],
+//   [5,6,7,8,],
+//   [9,10,11,12],
+//   [13,14,15,16],
+// ]
+// const diagnol= (arr)=>{
+//   for(let i = 0; i< arr.length; i++){
+//     console.log(arr[i][i])
+
+//   }
+// }
+// diagnol(arr2)
+
+
+// let names = ["bataa ", "baagii " ,"boldoo"]
+// names.forEach()
+
+  
+// useForEach (name ,(name ) =>{
+//   const a = name + "Hello";
+//   console.log(a)
+// });
+
+const findIndexMax = (arr) => {
+  let max = arr[0]
+  arr.useForEach(() => {
+
+  })
+return max;
 }
-const lostNum = (arr)=>{
-}
-console.log(summ(a))
-console.log(`${maxNumber(a)} ${mini(a)}`)
+
+console.log(findIndexMax([34, 23, 11, 55454, 789]))
 
 
 
