@@ -33,15 +33,13 @@
 //     })
 // })
 
-const images = document.querySelectorAll(".image > div") // CAROUSELS
-const [Prevbutton, Nextbutton] = document.querySelectorAll(".buttons button")
+const images = document.querySelectorAll(".sliders img") // CAROUSELS
+let slideindex = 0;
 
 
-let index = 0;
 
-Prevbutton.addEventListener("click" , ()=>{
 
-})
+
 
 
 
