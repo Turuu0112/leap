@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    
 }
 .container{
     display: flex;
@@ -40,11 +41,12 @@
     width: 50%;
     background-color:#4db5d0;
     color:white;
-
-    
 }
 .change{
     display: flex;
+    order: -1;
+}
+.left-change{
     order: -1;
 }
 
@@ -52,15 +54,13 @@
     border: 1px  solid grey ;
     height: 40px;
     width: 250px;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: whitesmoke;
+    border: solid transparent;
     
 }
-.password{
-    border: 1px  solid grey ;
-    height: 40px;
-    width: 250px;
-    background-color:azure;
-    margin-top: 10px;
-}
+
 button{
     width: 130px;
     height: 45px;

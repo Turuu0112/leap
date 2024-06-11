@@ -9,6 +9,6 @@ signUp.addEventListener("click",()=>{
     
 })
 sigign.addEventListener("click",()=>{
-    left.classList.add("change")
+    left.classList.add("left-change")
 })
 
