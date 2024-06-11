@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="./box.css" />
   </head>
   <body>
-    <div class="buttons">
+    <div class="container">
+    <div class="prevbtn">
       <button>Prev</button>
     </div>
     <div class="slider">
       <div class="sliders">
-        <img src="./img/Pictureub cab.png">
-        <img src="./img/Pictureub cab.png">
-        <img src="./img/Pictureub cab.png">
+       <div><img src="./img/Pictureub cab.png"></div> 
+       <div><img src="./img/Pictureub cab.png"></div>
+       <div><img src="./img/Pictureub cab.png"></div> 
       </div>
-      
-    </div>
-   
-    
-     <div class="buttons">
+    </div> 
+     <div class="nextbtn">
         <button>Next</button>
     </div>
-
-      </div>
+   
+</div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
       
     <script src="./box.js"></script>
   </body>

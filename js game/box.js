@@ -33,8 +33,21 @@
 //     })
 // })
 
-const images = document.querySelectorAll(".sliders img") // CAROUSELS
-let slideindex = 0;
+const images = document.querySelectorAll(".sliders img")
+const slides = document.querySelector(".slider")
+
+const prevbtn = document.querySelector(".prevbtn")
+const next = document.querySelector(".nextbtn")
+let slideIndex = 0;
+
+
+prevbtn.addEventListener("click" , ()=>{
+    slideIndex= (slideIndex + 1) % images.length;
+
+})
+
+
+
 
 
 
