@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./modal.css">
+    <script src="https://kit.fontawesome.com/5fa6f1f469.js" crossorigin="anonymous"></script>
 </head>
 <body>
-            <button class="open-modal">Open modal</button>
+            <button id="open-modal">Open modal</button>
 
             
             <div class="cards"></div>
@@ -17,12 +18,24 @@
                 <div class="modal">
                     <div class="head">
                         <h1>Hi,I'm a Modal</h1>
-                        <div class="modal-close-btn"></div>
+                        <div class="modal-close-btn">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
                     </div>
                     <label for="title"> title </label>
                         <input  id="title" name="title">
                     <label for="description"> description </label>
                         <textarea id="description" name="description" rows="4"></textarea>
+
+                        <label for="priority"></label>
+                            <input id="priority" placeholder="priority" >
+                            <select id="cars" name="carlist" form="carform">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        
                         <button type="">Create</button>
                     </form>
                     </div>
