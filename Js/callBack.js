@@ -141,7 +141,7 @@ const selectionSort = (arr) =>{
 
     console.log("sort", arr)
 
-    const a = [ "a", "abg", "dwdwdw", "f"]
+    const a = [ "a", "abg", "fff", "aa"]
     arr.sort ((a,b) => {
         if (a > b) return 1
         if ( a < b) return -1
