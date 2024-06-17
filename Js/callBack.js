@@ -96,17 +96,17 @@ arr[i] = arr[j]                             // Bubble sort
 arr[j] = res
 
 }
-// const bubbleSort = (arr) =>{
-//     for(let k=0; k< arr.length; k++){
-//         for (let i = 0; i<arr.length-1-i; i++){
-//             if(arr[i] > arr[i+1] ){
-//                 swap (arr, i ,i+1)
-//             }
-//         }
-//     }
-// }
-// bubbleSort(numbers)
-// console.log(numbers)
+const bubbleSort = (arr) =>{
+    for(let k=0; k< arr.length; k++){
+        for (let i = 0; i<arr.length-1-i; i++){
+            if(arr[i] > arr[i+1] ){
+                swap (arr, i ,i+1)
+            }
+        }
+    }
+}
+bubbleSort(numbers)
+console.log(numbers)
 
 
 const finIndexMIn = (arr,start) =>{

@@ -24,13 +24,15 @@ const cardtempalte = (title, description , priority, id)=>{
     return `
     <div class="card">
     <div>
-        <h1>${title}</h1>
-        <p>${description}</p> 
+    <input type ="checkbox" id ="check-box">
+        <span>${title}</span>
+        <span>${description}</span> 
         </div>
         <div><span>${priority}</span>
         </div>
+        <i class="fa-solid fa-pencil"></i>
     <div onclick="deleteItem(${id})">
-        <button>x</button>
+    <i style="color: red;" class="fa-regular fa-trash-can"></i>
     </div>
     </div>`;
 };
