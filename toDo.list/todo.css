@@ -9,14 +9,17 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     height: 100vh;
+    background-color: aquamarine;
 
 }
 
 #open-modal{
-    width: 300px;
-    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    border-radius: 10px;
 
 
 }
@@ -60,20 +63,23 @@ button{
     display: flex;
     flex-direction: column;
     background-color: black;
+    align-items: center;
 }
 .card{
-    border-radius: 5px;
-    padding: 16px;
-    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 240px;
-    height: 54px;
+    width: 95%;
+    height: 60px;
     color: white;
-    background-color: #1A1A1A;
-    margin-left: 20px;
-    font-size: 10px;
+    background-color: #515151;
+    margin-top:15px;
+    font-size: 13px;
+}
+.check{
+    display: flex;
 }
 .modal{
     display: flex;
@@ -131,14 +137,14 @@ form{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    background-color:#101010;
+    background-color:#504e4e;
     color: white;
     border-radius: 10px;
     padding: 15px;
 }
 .box{
     width: 280px;
-    height: 672px;
+    height: 600px;
     background-color: #101010;
     border-radius: 10px;
 }

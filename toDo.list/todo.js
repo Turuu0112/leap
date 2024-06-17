@@ -23,14 +23,15 @@ closeModalbtn.addEventListener("click",()=>{
 const cardtempalte = (title, description , priority, id)=>{
     return `
     <div class="card">
-    <div>
-    <input type ="checkbox" id ="check-box">
-        <span>${title}</span>
-        <span>${description}</span> 
+    <div class="check">
+    <input type ="checkbox" id ="check-box" >
+        <div style="margin-left: 10px"><p>${title}<p>
+        <p>${description}</p> </div>
         </div>
-        <div><span>${priority}</span>
+        <div>
+        <span></span>
         </div>
-        <i class="fa-solid fa-pencil"></i>
+        <i style="margin-left: 130px " class ="fa-solid fa-pencil"></i>
     <div onclick="deleteItem(${id})">
     <i style="color: red;" class="fa-regular fa-trash-can"></i>
     </div>
