@@ -1,27 +1,29 @@
-const modal =document.querySelector(".overlay")
-const openBtn = document.getElementById("open-modal")
-const closeModalbtn =document.querySelector(".modal-close-btn")
-const form = document.querySelector("form")
-const titleInput =document.querySelector("Input")
-const descriptionInput= document.querySelector("textarea")
-const selectInput =document.querySelector(".selection")
-const deletebTns= document.querySelector("textarea")
-const select = document.querySelectorAll(".selection")
-const priority =document.querySelectorAll("option")
+const modal = document.querySelector(".overlay");
+const openBtn = document.getElementById("open-modal");
+const closeModalbtn = document.querySelector(".modal-close-btn");
+const form = document.querySelector("form");
+const titleInput = document.querySelector("Input");
+const descriptionInput = document.querySelector("textarea");
+const selectInput = document.querySelector(".selection");
+const deletebTns = document.querySelector("textarea");
+const priority = document.querySelectorAll(".selection option");
+const status = document.querySelector(".status")
 
+const uid = () =>{
+    return Date.now().toString(36) + Math.random().toString(36)
+}
 
 let index = 0;
 
-openBtn.addEventListener("click",()=>{
-    modal.classList.add("open")
-})
+openBtn.addEventListener("click", () => {
+  modal.classList.add("open");
+});
 
-closeModalbtn.addEventListener("click",()=>{
-    modal.classList.remove("open")
-
-})
-const cardtempalte = (title, description , priority, id)=>{
-    return `
+closeModalbtn.addEventListener("click", () => {
+  modal.classList.remove("open");
+});
+const cardtemplate = (title, description, priority, id, status) => {
+  return `
     <div class="card">
     <div class="check">
     <input type ="checkbox" id ="check-box" >
@@ -29,59 +31,122 @@ const cardtempalte = (title, description , priority, id)=>{
         <p>${description}</p> </div>
         </div>
         <div>
-        <span></span>
+        <span>${priority}</span>
         </div>
-        <i style="margin-left: 130px " class ="fa-solid fa-pencil"></i>
+        <i style="margin-left: 80px " class ="fa-solid fa-pencil"></i>
     <div onclick="deleteItem(${id})">
     <i style="color: red;" class="fa-regular fa-trash-can"></i>
     </div>
-    </div>`;
+    </div>
+    `;
 };
 
-const cards = document.querySelector(".cards")
+const todo = document.querySelector(".Todo");
+const inprogress = document.querySelector(".In progress")
+const done = document.querySelector(".Done")
+const blocked = document.querySelector(".Blocked")
 
-let data = []
+let data = [
+    {
+        uid: uid(),
+    }
+];
 
-const setdata =(arr)=>{
-    data = arr.sort((a,b)=> a.priorityIndex - b.priorityIndex)
+const setdata = (arr) => {
+  data = arr
+  render();
+};
 
-    render()
-}
+const render = () => {
 
-const render = ()=>{
+  todo.innerHTML = "";
+  inprogress.innerHTML = "";
+  done.innerHTML = "";
+  blocked.innerHTML = "";
 
-    cards.innerHTML = "";
-    data.forEach((item)=>{
-    cards.innerHTML += cardtempalte(item.title , item.description, item.select, item.id)
+  let todo = []
+  let inprogress = []
+  let blocked = []
+  let done = []
 
-    }) 
-}
-form.addEventListener("submit",(event)=>{
-    event.preventDefault()
+  
+  data.forEach((item) => {
+    if(item.status === "To do"){
+        todo.push(cardtemplate({...item}))
+    }else if(item.status === "In progress"){
+        inprogress.push(cardtemplate({...item}))
+    }else if(item.status === "Done"){
+        done.push(cardtemplate({...item}))
 
-    let priorityIndex
-    const title =titleInput.value
-    const description =descriptionInput.value
-    const select = selectInput.value
-    const newdata =[
-        ...data,
-        {
-            id:index,
-        title : title,
-        description: description,
-        select : select,
-        priorityIndex:priorityIndex,
-    }  
-    ]
+    }else if(item.status === "Blocked"){
+        blocked.push(cardtemplate({...item}))
+    }
 
-    index ++;
-    setdata(newdata)
-    modal.classList.add("open")
+});
+todo.sort((a,b)=>{
+    const aP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+    const bP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+
+    return aP - bP;
+})
+inprogress.sort((a,b)=>{
+    const aP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+    const bP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+
+    return aP - bP;
+})
+done.sort((a,b)=>{
+    const aP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+    const bP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+
+    return aP - bP;
+})
+blocked.sort((a,b)=>{
+    const aP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+    const bP = a.priority === "High" ? 3 : a.priority === "Medium" ? 2 : 1;
+
+    return aP - bP;
+})
+todo.forEach((item)=>{
+    todo.innerHTML += item;
+})
+inprogress.forEach((item)=>{
+    inprogress.innerHTML += item;
+})
+done.forEach((item)=>{
+    done.innerHTML += item;
+})
+blocked.forEach((item)=>{
+    blocked.innerHTML += item;
 })
 
-const deleteItem = (id)=>{
-    const newdata =[...data].filter((item) => item.id !== id)
-    setdata(newdata)
+}
+
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const title = titleInput.value;
+  const description = descriptionInput.value;
+  const select = selectInput.value;
+  const newdata = [
+    ...data,
+    {
+      id: index,
+      title: title,
+      description: description,
+      select: select,
+    }
+  ];
+
+  index++;
+  setdata(newdata);
+  modal.classList.add("open");
+});
+
+const deleteItem = (id) => {
+  const newdata = [...data].filter((item) => item.id !== id);
+  setdata(newdata);
 };
 
-render()
+render();
